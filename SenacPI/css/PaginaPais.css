@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+header{
+    background-color: #FF6949;
+    color: white;
+    
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.headerLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerLeft a{
+    text-decoration: none;
+    color: white;
+    margin-left: 13vh;  
+}
+.headerLeft a:hover{
+    text-decoration:underline 2px;
+}
+.headerLeft img{
+    height: 110px;
+    margin-left: 15vh;
+}
+.headerRight{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10vh;
+}
+.headerRight a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 10px;
+}
+.headerRight a:hover{
+    text-decoration:underline 2px;
+}
+.headerRight img{
+    height: 50px;
+    border-radius: 50%;
+}
+.login{
+    margin-left: 10vh;
+}
+
+/* Body */
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+.publicacao{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.leftContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vh;
+    padding-right: 5vh;
+}
+.leftContent img{
+    border-radius: 2vh;
+}
+#FotoPaginaPais{
+    width: 700px;
+    height: 500px;
+    margin-right: 10vh;
+    border: 40px solid transparent;
+    border-image: url("OIP.jpg") 30 round;
+    
+}
+.rightContent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh;
+    border-left: 2px solid #FF6949;
+}
+.ContainerComentarios{
+    margin-top: 10vh;
+}
+/* Comentarios*/
+
+.ContainerComentarios{
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Comentarios{
+    margin-top: 3vh;
+}
+#InputComentarios{
+    margin-top: 3vh;
+    width: 350px;
+    height: 3.1vh;
+    padding: 10px;
+    border-radius: 1vh;
+    border:  2px solid #FF6949;
+    outline: 0;
+}
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: #FF6949;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius:0px 1vh 1vh 0vh;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    position: relative;
+    bottom: 5.6vh;
+    left: 36vh;
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  button:hover span {
+    transform: translateX(5em);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  
+
+/*footer*/
+
+footer{
+    background-color: #FF6949;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15vh;
+}
+.redesSociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+.footerLeft img{
+    height: 7vh;
+    margin-left: 5vh;
+}
+.footerLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    margin-left: 20vh;
+}
+.inputEmail{
+    width: 80vh;
+    background-color: aliceblue;
+    border-radius: 20vh;
+    display: flex;
+    color: #FF6949;
+    align-items: center;  
+    font-size: large;
+    padding: 10px;
+    margin-top: 7vh;
+}
+.inputEmail p{
+    margin-left: 5vh;
+}
+.copy{
+    margin-top: 8vh;
+    text-align: center;
+}

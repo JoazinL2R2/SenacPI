@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+header{
+    background-color: #FF6949;
+    color: white;
+    
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.headerLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerLeft a{
+    text-decoration: none;
+    color: white;
+    margin-left: 13vh;  
+}
+.headerLeft a:hover{
+    text-decoration:underline 2px;
+}
+.headerLeft img{
+    height: 110px;
+    margin-left: 15vh;
+}
+.headerRight{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10vh;
+}
+.headerRight a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 10px;
+}
+.headerRight a:hover{
+    text-decoration:underline 2px;
+}
+.headerRight img{
+    height: 50px;
+    border-radius: 50%;
+}
+.login{
+    margin-left: 10vh;
+}
+/* Modal Login*/
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+.modalCadastro {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+.form {
+    background-color: #fff;
+    display: block;
+    padding: 1rem;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #FF6949;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .input-container input, .form button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+  }
+  
+  .input-container input {
+    background-color: #fff;
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .input-container span {
+    display: grid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    place-content: center;
+  }
+  
+  .input-container span svg {
+    color: #9CA3AF;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .submit {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #FF6949;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .signup-link {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+  
+  .signup-link a {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contentRight{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10vh;
+}
+.contentLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20vh;
+    margin-bottom: 15vh;
+}
+.contentLeft p{
+    color: #FF6949;
+    margin-top: 2vh;
+    text-align: center;
+    font-size: x-large;
+}
+.contentLeft button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #FF6949;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #FF6949;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #FF6949;
+    margin-top: 3vh;
+  }
+  
+  .contentLeft  button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #FF6949;
+  }
+  
+  .contentLeft  button:active {
+    transform: scale(0.9);
+  }
+
+/*Segunda pagina*/
+.segundoHeader{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.contentSegundoHeader{
+    width: 50%;
+    text-align: center;
+    color: #FF6949;
+    margin-bottom: 10vh;
+}
+.banner{
+    background-color: #FF6949;
+    height: 42vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.galeria{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25vh;
+}
+.contentFooter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    color: #FF6949;
+}
+.filhoContentFooter{
+    width: 40%;
+    text-align: center;
+}
+
+/*footer*/
+
+footer{
+    background-color: #FF6949;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15vh;
+}
+.redesSociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+.footerLeft img{
+    height: 7vh;
+    margin-left: 5vh;
+}
+.footerLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    margin-left: 20vh;
+}
+.inputEmail{
+    width: 80vh;
+    background-color: aliceblue;
+    border-radius: 20vh;
+    display: flex;
+    color: #FF6949;
+    align-items: center;  
+    font-size: large;
+    padding: 10px;
+    margin-top: 7vh;
+}
+.inputEmail p{
+    margin-left: 5vh;
+}
+.copy{
+    margin-top: 8vh;
+    text-align: center;
+}
+
+
